@@ -4,7 +4,7 @@
             <div class="uk-width-3-4"><input type="text" placeholder="请输入总重量" v-model="weight"  class="uk-input"></div>
 
             <div class="uk-width-3-4"><input type="text" placeholder="请输入误差" v-model="error"  class="uk-input uk-width-1-1"></div>
-            <div class="uk-width-1-1" v-for="good in goods">{{good.name}}  :  <input type="text" placeholder="请输入重量" v-model="good.weight"  class="uk-input uk-width-2-3"></div>
+            <div class="uk-width-1-1" v-for="good in goods">{{good.name}}  :  <input type="text" placeholder="请输入重量" v-model="good.weight"  class="uk-input uk-width-1-4">      <input type="text" placeholder="请输入误差" v-model="good.error"  class="uk-input uk-width-1-4"></div>
 
         </div>
 
@@ -38,35 +38,43 @@
                 "goods":[
                     {
                         "name":"可乐",
-                        "weight":431
+                        "weight":431 ,
+                        "error":0.5
                     }	,
                     {
                         "name":"红酒",
-                        "weight":983
+                        "weight":983,
+                        "error":0.5
                     }	,
                     {
                         "name":"怡宝",
-                        "weight":214
+                        "weight":214,
+                        "error":0.5
                     },
                     {
                         "name":"喜茶",
-                        "weight":87
+                        "weight":87,
+                        "error":0.5
                     },
                     {
                         "name":"奶茶",
-                        "weight":567
+                        "weight":567,
+                        "error":0.5
                     },
                     {
                         "name":"绿茶",
-                        "weight":398
+                        "weight":398,
+                        "error":0.5
                     },
                     {
                         "name":"啤酒",
-                        "weight":28
+                        "weight":28,
+                        "error":0.5
                     },
                     {
                         "name":"黑茶",
-                        "weight":76
+                        "weight":76,
+                        "error":0.5
                     }
                 ]
             }
